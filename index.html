@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="core.css">
+		<title>Calculator</title>
+	</head>
+	<body>
+		<div class="container">
+			<ul class="nav-info col-4 text-white">
+				<li class="text-left">
+					<img src="signal.png" height="9px">
+					<span>TSEL 4G</span>
+				</li>
+				<li class="text-center">
+					<span>8:14 PM</span>
+				</li>
+				<li class="text-right">
+					<img src="clock.png" height="9px">
+					<span>Icon</span>
+					<img src="battery.png" height="9px">
+				</li>
+			</ul>
+			<div class="item col-4">
+				<h1 class="text-white text-right input-1" id="input-1">0</h1>
+				<h1 class="text-right input-2 d-none" id="input-2">0</h1>
+			</div>
+			<div class="item col-3">
+				<a href="" class="bg-light text-white">C</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-warning text-white" onclick="operation(this)">÷</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('7')">7</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('8')">8</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('9')">9</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-warning text-white" onclick="operation(this)">×</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('4')">4</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('5')">5</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('6')">6</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-warning text-white" onclick="operation(this)">+</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white"  onclick="get('1')">1</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('2')">2</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('3')">3</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-warning text-white" onclick="operation(this)">-</a>
+			</div>	
+			<div class="item col-2">
+				<a href="#" class="bg-dark text-white" onclick="get('0')">0</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-dark text-white" onclick="get('.')">.</a>
+			</div>
+			<div class="item">
+				<a href="#" class="bg-warning text-white" onclick="result()">=</a>
+			</div>	
+		</div>
+
+		<footer class="footer">
+			<p class="text-center">Created By Abdillah AG</p>
+			<p class="text-center"><small>Design Like Iphone Calculator</small></p>
+		</footer>
+
+		<!-- JavaScript Area -->
+		<script src="core.js"></script>
+	</body>
+</html>
