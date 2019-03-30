@@ -27,9 +27,6 @@
 *	
 */
 
-
-
-
 /*
 * @function : get 		=> menerima inputan bilangan dari user. 
 * @parameter : number 	=> untuk menerima bilangan saat event onclick-
@@ -122,4 +119,26 @@ function result() {
 
 	//Menampilkan hasil dari operasi pada elemen dengan id "#input-1" yakni tag H1.
 	document.querySelector('#input-1').innerText = result;
+}
+
+
+/*
+* Automatic Real Time Clock
+*/
+function time() {
+  	var today = new Date();
+  	var hours = today.getHours();
+  	var minutes = today.getMinutes();
+  	var seconds = today.getSeconds();
+
+  	minutes = check(minutes);
+  	seconds = check(seconds);
+  
+  	document.querySelector('.time').innerHTML = hours + ":" + minutes + ":" + seconds;
+  	var timer = setTimeout(time, 500);
+}
+
+function check(i) {
+  	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  	return i;
 }
