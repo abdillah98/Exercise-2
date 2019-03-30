@@ -50,11 +50,20 @@ body {
 .bg-dark {
 	background-color: #333333;
 }
+.bg-dark:hover {
+	background-color: #3c3c3c;
+}
 .bg-light {
 	background-color: #a6a6a6;
 }
+.bg-light:hover {
+	background-color: #949393;
+}
 .bg-warning {
 	background-color: #ff9501;
+}
+.bg-warning:hover {
+	background-color: #d27c04;
 }
 .col-3 {
 	grid-column: 1 / 4;
