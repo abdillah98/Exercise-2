@@ -74,10 +74,10 @@ function operation(this_) {
 	* akan di hidden digantikan dengan inputan baru.
 	*/
 	document.querySelector('#input-1').classList.remove('input-1')		//menghapus kelas "input-1"	pada elemen dengan id ="input-1".
-	document.querySelector('#input-1').classList.add('input-2')			//menghapus kelas "input-2" pada elemen dengan id ="input-1".
+	document.querySelector('#input-1').classList.add('input-2')			//menambahkan kelas "input-2" pada elemen dengan id ="input-1".
 	
 	document.querySelector('#input-2').classList.remove('input-2')		//menghapus kelas "input-2"	pada elemen dengan id ="input-2".
-	document.querySelector('#input-2').classList.add('input-1')			//menghapus kelas "input-1"	pada elemen dengan id ="input-2".
+	document.querySelector('#input-2').classList.add('input-1')			//menambahkan kelas "input-1"	pada elemen dengan id ="input-2".
 }
 
 
